@@ -3,5 +3,5 @@
 
 # Name: Prashant gupta
 # Register Number: 24CS0666
-# Subject: Data Analytics and Visualization
-# Subject code: CS4503
+# Subject: Cloud computing
+# Subject code:  CS4V51
