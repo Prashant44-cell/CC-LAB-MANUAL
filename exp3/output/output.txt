@@ -1,0 +1,24 @@
+Ex.No: 03
+Date: 2026-08-11
+Install Google App Engine & Web Application Development
+
+Aim:
+To Install Google App Engine. Create hello world app and other simple web applications using python/java.
+
+Eclipse / GAE Server Console Output:
+--------------------------------------------------
+INFO: The server is running at http://localhost:8888/
+com.google.appengine.tools.development.DevAppServerImpl start
+INFO: The admin console is running at http://localhost:8888/_ah/admin
+
+Local Testing:
+URL: http://localhost:8888/helloworld
+Output: Hello, world
+
+Deployment Status:
+Deploying project HelloWorld to Google App Engine...
+Ready to deploy application 'mkyong123', version 1
+Application deployed to: http://mkyong123.appspot.com/
+
+Result:
+Thus the Google App Engine is installed successfully and a web application to display hello world using python/java is developed and deployed in GAE.

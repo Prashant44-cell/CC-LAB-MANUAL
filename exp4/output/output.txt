@@ -1,0 +1,30 @@
+Ex.No: 04
+Date: 2026-08-11
+Use GAE Launcher to Launch Web Applications
+
+Aim:
+To Use GAE launcher to launch the web applications.
+
+Console Log:
+--------------------------------------------------
+$ gcloud app deploy --project=my-cloud-app-123
+Services to deploy:
+descriptor:                  [app.yaml]
+source:                      [E:\Lab Manaul\CC\codebase\exp4\code]
+target project:              [my-cloud-app-123]
+target version:              [20260811t0830]
+target service:              [default]
+
+Updating service [default]... done.
+Deployed service [default] to [https://my-cloud-app-123.ey.r.appspot.com]
+
+$ gcloud app browse
+Opening https://my-cloud-app-123.ey.r.appspot.com in default browser.
+
+HTTP Request Verification:
+GET / -> 200 OK
+Content-Type: text/html
+Body: <h1>Hello, world!</h1>
+
+Result:
+Thus a GAE launcher is used to launch the web applications and successfully executed.

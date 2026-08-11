@@ -1,0 +1,38 @@
+Ex.No :02
+Date: 2026-08-11
+Virtual Machine – C Compiler
+
+Aim:
+Install a C compiler in the virtual machine created using a virtual box and execute Simple Programs.
+
+Terminal Log:
+--------------------------------------------------
+tc@box:~$ tce-load -wi compiletc
+Connecting to ftp.cc.uoc.gr (147.52.159.12:80)
+saving to 'diffutils.tcz'
+100% |*******************************| 128k 0:00:00 ETA
+diffutils.tcz: OK
+Downloading: gettext.tcz
+100% |*******************************| 1516k 0:00:00 ETA
+gettext.tcz: OK
+Downloading: bison.tcz
+100% |*******************************| 472k 0:00:00 ETA
+bison.tcz: OK
+Downloading: compiletc.tcz
+100% |*******************************| 4096 0:00:00 ETA
+compiletc.tcz: OK
+
+tc@box:~$ sudo editor demo.c
+[Saved demo.c]
+
+tc@box:~$ cc demo.c -o a.out
+tc@box:~$ ./a.out
+Enter the Year: 1991
+1991 is not Leap Year
+
+tc@box:~$ ./a.out
+Enter the Year: 2024
+2024 is a Leap Year
+
+Result:
+Thus the Install a C compiler in the virtual machine created using a virtual box and execute Simple Programs is completed successfully.

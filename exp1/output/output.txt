@@ -1,0 +1,29 @@
+Ex.No :01
+Date: 2026-08-11
+Virtual Workstation Setup
+
+Aim:
+To install Virtualbox/VMware/ Equivalent open source cloud Workstation with different flavours of Linux or Windows OS on top of windows 8 and above.
+
+Hands-on Procedure & Verification Log:
+--------------------------------------------------
+Step 1: Download VirtualBox 7.0.14 from https://www.virtualbox.org/wiki/Downloads
+Step 2: Run VirtualBox-7.0.14-Setup.exe on Windows 10/11 host machine.
+Step 3: Complete VirtualBox installation wizard with default network interfaces.
+Step 4: Launch Oracle VM VirtualBox Manager.
+Step 5: Click 'New' (Ctrl+N) to open Create Virtual Machine wizard.
+        - Name: Windows 98SE
+        - Folder: C:\Users\HOME\VirtualBox VMs
+        - ISO Image: Win98SE.iso
+        - Type: Microsoft Windows
+        - Version: Windows 98
+Step 6: Hardware Allocation:
+        - Base Memory: 512 MB
+        - Processors: 1 CPU
+Step 7: Virtual Hard Disk Setup:
+        - Create Virtual Hard Disk Now
+        - Disk Size: 2.00 GB
+Step 8: Start VM and complete Guest OS installation.
+
+Result:
+Thus the VirtualBox installation on Windows Host machine and installation of Windows Guest Operating system are experimented successfully.

@@ -1,0 +1,45 @@
+Ex. No: 09
+Date: 2026-08-11
+Run a Container from Docker Hub
+
+Aim:
+To write a program to run a container from Docker hub.
+
+Terminal Output Log:
+--------------------------------------------------
+$ docker container run -d --name ubuntu-app ubuntu top
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+Digest: sha256:f3a61450ae43896c4332bda5e78b453f4a93179045f20c8181043b26b5e79028
+Status: Downloaded newer image for ubuntu:latest
+af549dccd5cf...
+
+$ docker container run --detach --publish 8080:80 --name nginx-app nginx
+Unable to find image 'nginx:latest' locally
+Digest: sha256:c15f1fb8fd55c60c72f940a76da76a5fccce2fefa0dd9b17967b9e40b0355316
+Status: Downloaded newer image for nginx:latest
+d6777df89fea...
+
+$ docker container run --detach --publish 8081:27017 --name mongo-app mongo:4.4
+Status: Downloaded newer image for mongo:4.4
+ead80a0db505...
+
+$ docker container ls
+CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                     NAMES
+d6777df89fea   nginx       "nginx -g 'daemon... "   3 minutes ago   Up 3 minutes   0.0.0.0:8080->80/tcp      nginx-app
+ead80a0db505   mongo:4.4   "docker-entrypoint... "  3 minutes ago   Up 3 minutes   0.0.0.0:8081->27017/tcp   mongo-app
+af549dccd5cf   ubuntu      "top"                    8 minutes ago   Up 8 minutes                             ubuntu-app
+
+$ curl http://localhost:8080
+<!DOCTYPE html>
+<html>
+<head><title>Welcome to nginx!</title></head>
+<body><h1>Welcome to nginx!</h1></body>
+</html>
+
+$ docker container stop d6777df89fea ead80a0db505 af549dccd5cf
+$ docker system prune -f
+Total reclaimed space: 1.2 GB
+
+Result:
+Thus, the write program to run a container from Docker Hub executed and verified successfully.

@@ -1,0 +1,28 @@
+Ex.No: 06
+Date: 2026-08-11
+Procedure to Transfer Files Between Virtual Machines
+
+Aim:
+To Find a procedure to transfer the files from one virtual machine to another virtual machine.
+
+Execution Log & Verification:
+--------------------------------------------------
+[Method 1: Drag and Drop / Clipboard]
+  - Oracle VM VirtualBox Manager -> Settings -> General -> Advanced
+  - Shared Clipboard: Bidirectional
+  - Drag'n'Drop: Bidirectional
+  - Result: Files copied seamlessly between Host OS and Guest OS.
+
+[Method 2: USB Drive Access]
+  - Oracle VM VirtualBox Manager -> Preferences -> Extensions -> Add VirtualBox Extension Pack.
+  - Settings -> USB -> Enable USB Controller -> Add USB Filter.
+  - Result: USB Storage mounted inside Guest OS.
+
+[Method 3: Network Transfer (SCP/Shared Folders)]
+  - Machine 1 IP: 192.168.56.101
+  - Machine 2 IP: 192.168.56.102
+  - Command: scp /home/user/document.txt student@192.168.56.102:/home/student/
+  - Output: document.txt  100% 1024B  1.2MB/s   00:00
+
+Result:
+Thus the procedure to transfer the files from one virtual machine to another virtual machine is executed successfully.
